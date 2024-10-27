@@ -27,3 +27,20 @@ const blueText = document.createElement("h3");
 blueText.style.color = "blue";
 blueText.textContent = "I'm a blue h3!";
 container.appendChild(blueText);
+
+// Add a <div> with a black border and pink background
+const blackPinkDiv = document.createElement("div");
+blackPinkDiv.style.border = "2px solid black";
+blackPinkDiv.style.backgroundColor = "pink";
+
+// Inside this div, add an <h1> and a <p>
+const innerH1 = document.createElement("h1");
+innerH1.textContent = "I'm in a div";
+blackPinkDiv.appendChild(innerH1);
+
+const innerP = document.createElement("p");
+innerP.textContent = "ME TOO!";
+blackPinkDiv.appendChild(innerP);
+
+// Append the blackPinkDiv to container
+container.appendChild(blackPinkDiv);
